@@ -62,7 +62,11 @@ The Needleman-Wunsch algorithm finds the optimal *global* alignment (end-to-end)
 The scores are computed using the already existing scores in the left, top-left, and top cells:
 
 $$
-F(i,j)=\max\begin{cases}F(i-1,j-1)+s(x_i,y_i),\\F(i-1,j)-d,\\F(i,j-1)-d.\end{cases}
+F(i,j)=\max\left\{\begin{array}{ll}
+F(i-1,j-1)+s(x_i,y_i),\\
+F(i-1,j)-d,\\
+F(i,j-1)-d
+\end{array}\right.
 $$
 
 The following image illustrates the scoring and pointer matrices.
