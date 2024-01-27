@@ -35,7 +35,7 @@ By using the base-2 logarithm, the unit of self-information is bit. Hence, one b
 Self-information deals only with a single event $x$. By computing the expectation of the self-information with respect to the entire probability distribution $P(\text{x})$ we obtain the entropy
 
 $$
-H(\text{x})=\mathbb{E}_{\text{x}\sim{}P}[I(x)]=-\mathbb{E}_{\text{x}\sim{}P}[\log{}P(x)]=-\sum_{x}P(x)\log{}P(x).
+H(x)=-\sum_{x}P(x)\log_2 P(x).
 $$
 
 The entropy gives the average information that is expected in an event $x$ drawn from probability distribution $P(\text{x})$.
